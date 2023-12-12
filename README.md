@@ -4,16 +4,6 @@ Dataset Prepration : Dowload MSCOCO : http://images.cocodataset.org/zips/train20
 http://images.cocodataset.org/zips/val2014.zip - Val
 karpathy split - Karpathy Split 
 
-Structre : root
-
-├── train2014            
-│   ├── COCO_train2014_000000000009.jpg                
-|   └── ...
-├── val2014              
-|   ├── COCO_val2014_000000000042.jpg
-|   └── ...          
-└── karpathy
-    └── dataset_coco.json 
 
 Convert the dataset into pyarrow format and save it to the /home/ViLT/data2/dsets/dataset 
 from vilt.utils.write_coco_karpathy import make_arrow
